@@ -25,8 +25,8 @@ This is a modification of the [fixed length search](https://github.com/TiagoCava
 
 ## Directed graphs?
 
-This algorithm can be easily adaptated to directed graphs just by switching the `get_neighbors` by a `is_neghbored_by_these` or equivalent.
+This algorithm can be easily adapted to directed graphs just by switching the `get_neighbors` by a `get_incoming_neighbors` or equivalent.
 
 ## Best path?
 
-This algorithm can also be easily updated so instead of stoping when the threshold is reached, only stop when the best path is found. To do this you just need to remove the threshold and save the path with the closest cost.
+This algorithm can also be easily updated so instead of stopping when the threshold is reached, only stop when the best path is found. To do this you just need to remove the threshold and save the path with the closest cost.

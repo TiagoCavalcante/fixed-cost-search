@@ -36,7 +36,7 @@ fn main() {
       {
         measured_cost += weight;
       } else {
-        panic!("The path contains unvalid edges");
+        panic!("The path contains un-valid edges");
       }
     }
 

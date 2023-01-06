@@ -90,7 +90,7 @@ fn shared_paths(
 /// The idea behind this algorithm is to first find the
 /// shortest path from the start to then end, and then make
 /// the reverse path trying to increase its cost, but
-/// without exceding the desired cost, and stop when a
+/// without exceeding the desired cost, and stop when a
 /// path with the desired cost is reached.
 /// ```
 /// let path = path::fixed_cost_search(
@@ -118,7 +118,7 @@ pub fn fixed_cost_search(
   // Differently from the BFS algorithm we need to keep the
   // predecessors from both the start and the end.
   // Also differently from the BFS algorithm we save the
-  // predeecessors of each vertex in its own array, this is
+  // predecessors of each vertex in its own array, this is
   // necessary to avoid paths with wrong costs because
   // another iteration has modified the predecessors of a
   // vertex.
@@ -214,7 +214,7 @@ pub fn fixed_cost_search(
         // this neighbor as we can't use any vertex more
         // than once.
         // && !in_end_path(&predecessor_from_end, current, neighbor)
-        // The check above is implicity in shared_paths.
+        // The check above is implicit in shared_paths.
         // The contrary may also happen.
         && !in_start_path(&predecessor_from_start, neighbor, current)
         // This is the slowest test, but if we remove this
