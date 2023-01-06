@@ -2,6 +2,8 @@
 name = "fixed-cost-search"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "Fixed cost search on weighted graphs"
 
 [dependencies]
 graphs = { git = "https://github.com/TiagoCavalcante/graphs", tag = "0.3.1" }
